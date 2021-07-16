@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS invoice_item;
-
+-- DROP TABLE IF EXISTS invoice_item;
+USE `invoice-service`;
 CREATE TABLE invoice_item(
 	id_item INT PRIMARY KEY AUTO_INCREMENT,
     id_invoice INT,

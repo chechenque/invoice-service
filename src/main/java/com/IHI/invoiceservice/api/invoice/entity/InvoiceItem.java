@@ -37,7 +37,7 @@ public class InvoiceItem {
 	@JsonProperty("tax_percentage")
 	@Column(name = "tax_percentage")
 	@NotNull(message = "tax_percentage is required")
-	private Integer taxPercentage;
+	private Double taxPercentage;
 	
 	@JsonProperty("subtotal")
 	@Transient

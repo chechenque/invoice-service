@@ -1,4 +1,7 @@
-DROP TABLE IF EXISTS invoice;
+-- DROP TABLE IF EXISTS invoice;
+CREATE DATABASE  IF NOT EXISTS `invoice-service`;
+USE `invoice-service`;
+
 
 CREATE TABLE invoice(
 	id_invoice INT PRIMARY KEY AUTO_INCREMENT,

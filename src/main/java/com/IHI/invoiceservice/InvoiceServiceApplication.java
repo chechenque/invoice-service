@@ -2,6 +2,9 @@ package com.IHI.invoiceservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.client.RestTemplate;
+
 
 @SpringBootApplication
 public class InvoiceServiceApplication {
@@ -10,4 +13,8 @@ public class InvoiceServiceApplication {
 		SpringApplication.run(InvoiceServiceApplication.class, args);
 	}
 
+	@Bean
+	public RestTemplate restTemplate() {
+		return new RestTemplate();
+	}
 }

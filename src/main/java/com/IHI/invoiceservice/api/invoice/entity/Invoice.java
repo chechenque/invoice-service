@@ -50,7 +50,7 @@ public class Invoice {
 	private Double total;
 	
 	@JsonProperty("created_at")
-	@Transient
+	@Column(name = "created_at")
 	private LocalDate createdAt;
 	
 	@JsonIgnore
